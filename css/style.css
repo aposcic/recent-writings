@@ -1,0 +1,164 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stwritingle;
+}
+
+.pretty-face {
+  margin-bottom: 1rem;
+  background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.space {
+  font-family: 'Space Mono', monospace;
+}
+
+.large {
+  font-size: 4.0rem;
+}
+
+.medium {
+  font-size: 3.0rem;
+}
+
+.small {
+  font-size: 2.0rem;
+}
+
+.tiny {
+  font-size: 1.5rem;
+}
+
+.links {
+  font-size: 1.5rem;
+}
+
+/*noinspection CssReplaceWithShorthandSafely*/
+a {
+  background: linear-gradient(to right,
+      rgba(72, 147, 165),
+      rgba(72, 147, 165)),
+    linear-gradient(to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  text-decoration: none;
+}
+
+a:link {
+  color: rgba(113, 177, 193, 0.65);
+}
+
+a:visited {
+  color: rgba(113, 177, 193, 0.65);
+}
+
+a:active {
+  color: rgba(113, 177, 193, 0.65);
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10rem;
+  row-gap: 1.0rem;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 2.0rem;
+  opacity: 0.65;
+  padding-right: 25px;
+}
+
+.recent-writings {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.writing-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 2.0rem;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(44, 67, 83, 0.3);
+  border-left: 4px solid #4893a5;
+  border-radius: 0.5rem;
+}
+
+.entry-content {
+  flex: 1;
+}
+
+.entry-title {
+  margin: 0 0 0.75rem 0;
+  background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+}
+
+.entry-description {
+  margin: 0;
+  color: rgba(200, 200, 200, 0.85);
+  font-size: 1.0rem;
+  line-height: 1.6;
+}
+
+.entry-image {
+  max-width: 200px;
+  height: auto;
+  opacity: 1;
+  padding: 0;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.entry-link {
+  display: block;
+  text-decoration: none;
+  background: none;
+  transition: all 300ms ease;
+}
+
+.entry-link:hover .writing-entry {
+  background: rgba(44, 67, 83, 0.6);
+  border-left-color: #6bb3d5;
+  transform: translateX(8px);
+}
+
+.entry-link:hover .entry-title {
+  background: linear-gradient(180deg, #6bb3d5 15%, #4a7a92 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.entry-link:hover .entry-description {
+  color: rgba(200, 200, 200, 1);
+}
