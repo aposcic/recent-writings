@@ -197,6 +197,10 @@ a:hover {
 }
 
 @media (max-width: 760px) {
+  .content {
+    padding-right: 0.5rem;
+  }
+  
   .recent-writings {
     gap: 1.25rem;
   }
