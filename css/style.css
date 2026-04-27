@@ -114,6 +114,7 @@ a:hover {
   gap: 1.5rem;
   width: 100%;
   max-width: 900px;
+  padding-bottom: 1.5rem;
 }
 
 .entry {
