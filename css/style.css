@@ -19,7 +19,13 @@ body {
 }
 
 .pretty-face {
+  position: relative;
+  display: inline-block;
   margin-bottom: 1rem;
+}
+
+.pretty-face > span {
+  position: relative;
   background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -52,7 +58,7 @@ body {
   color: inherit;
 }
 
-.header-link:hover .pretty-face {
+.header-link:hover .pretty-face > span {
   background: linear-gradient(180deg, #6bb3d5 15%, #4a7a92 85%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -149,12 +155,18 @@ a:hover {
 }
 
 .entry-title {
+  position: relative;
+  display: inline-block;
   margin: 0 0 0.75rem 0;
+  font-size: 1.5rem;
+}
+
+.entry-title > span {
+  position: relative;
   background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 1.5rem;
 }
 
 .entry-description {
@@ -187,7 +199,7 @@ a:hover {
   background-size: 0 100%, 100% 100%;
 }
 
-.entry-link:hover .entry-title {
+.entry-link:hover .entry-title > span {
   background: linear-gradient(180deg, #6bb3d5 15%, #4a7a92 85%);
   background-clip: text;
   -webkit-background-clip: text;
