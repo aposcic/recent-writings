@@ -147,16 +147,19 @@ a:hover {
 }
 
 .entry-title {
-  margin: 0 0 0.75rem 0;
+  display: inline;
+  margin: 0;
   background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .entry-description {
-  margin: 0;
+  margin: 0.75rem 0 0 0;
   color: rgba(200, 200, 200, 0.85);
   font-size: 1.0rem;
   line-height: 1.3;
